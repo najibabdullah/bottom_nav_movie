@@ -1,15 +1,10 @@
 import 'package:bottom_nav_movie/component/array_search.dart';
-import 'package:bottom_nav_movie/widget/mybutton.dart';
 import 'package:bottom_nav_movie/widget/mycard2.dart';
 import 'package:bottom_nav_movie/widget/mycolor.dart';
-import 'package:bottom_nav_movie/widget/mygambar.dart';
-import 'package:bottom_nav_movie/widget/mytext.dart';
 import 'package:flutter/material.dart';
 
 class Searchmenu extends StatelessWidget {
   const Searchmenu({super.key});
-
-  // Daftar film rekomendasi untuk ListView
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +40,6 @@ class Searchmenu extends StatelessWidget {
             ),
             SizedBox(height: 30),
 
-            // Rekomendasi Film
             Text(
               'REKOMENDASI',
               style: TextStyle(
@@ -55,7 +49,6 @@ class Searchmenu extends StatelessWidget {
             ),
             SizedBox(height: 10),
 
-            // Menggunakan ListView.builder untuk membuat daftar film dinamis
             Expanded(
               child: ListView.builder(
                 itemCount: recommendedMovies.length,

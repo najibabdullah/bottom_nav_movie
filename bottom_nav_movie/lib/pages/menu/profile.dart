@@ -19,22 +19,22 @@ class ProfilePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(height: 20),
-          // Avatar
+  
           CircleAvatar(
             radius: 60,
             backgroundImage: AssetImage('assets/icon/akuucihuy.jpg'),
           ),
+
           SizedBox(height: 10),
 
-          // Username
           Text(
             'Najibunn',
             style: TextStyle(
                 fontSize: 24, fontWeight: FontWeight.bold, color: primaryColor),
           ),
+
           SizedBox(height: 5),
 
-          // Email
           Text(
             'najibunn112@Gmail.com',
             style: TextStyle(
@@ -44,7 +44,6 @@ class ProfilePage extends StatelessWidget {
 
           SizedBox(height: 20),
           Divider(),
-
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Align(
@@ -59,7 +58,6 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
 
-          // Movie list (example cards)
           Expanded(
             child: ListView(
               children: [
