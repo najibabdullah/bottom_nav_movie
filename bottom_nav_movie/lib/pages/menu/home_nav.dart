@@ -1,5 +1,4 @@
 import 'package:bottom_nav_movie/component/array_home.dart';
-import 'package:bottom_nav_movie/component/array_poster.dart';
 import 'package:bottom_nav_movie/model/model_card.dart';
 import 'package:bottom_nav_movie/widget/mycolor.dart';
 import 'package:bottom_nav_movie/widget/mygambar.dart';
@@ -22,6 +21,7 @@ class Homemenu extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: Text("Home"),
+        automaticallyImplyLeading: false,
         foregroundColor: primaryColor,
         centerTitle: true,
       ),

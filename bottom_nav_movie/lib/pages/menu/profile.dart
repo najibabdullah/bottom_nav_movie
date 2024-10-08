@@ -11,6 +11,7 @@ class ProfilePage extends StatelessWidget {
       backgroundColor: asikkcolor,
       appBar: AppBar(
         title: Text('Profile'),
+        automaticallyImplyLeading: false,
         centerTitle: true,
         backgroundColor: Colors.transparent,
         foregroundColor: primaryColor,
@@ -24,7 +25,6 @@ class ProfilePage extends StatelessWidget {
             radius: 60,
             backgroundImage: AssetImage('assets/icon/akuucihuy.jpg'),
           ),
-
           SizedBox(height: 10),
 
           Text(
@@ -32,7 +32,6 @@ class ProfilePage extends StatelessWidget {
             style: TextStyle(
                 fontSize: 24, fontWeight: FontWeight.bold, color: primaryColor),
           ),
-
           SizedBox(height: 5),
 
           Text(

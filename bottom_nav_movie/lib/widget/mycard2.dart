@@ -51,7 +51,7 @@ class MovieCard2 extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
-                        color: primaryColor),
+                        color: primaryColor),   
                   ),
                   Text(
                     '⭐ $rating',

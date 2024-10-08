@@ -1,4 +1,4 @@
-import 'package:bottom_nav_movie/component/array_search.dart';
+import 'package:bottom_nav_movie/component/array_home.dart';
 import 'package:bottom_nav_movie/widget/mycard2.dart';
 import 'package:bottom_nav_movie/widget/mycolor.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +14,7 @@ class Searchmenu extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: Text("Search"),
+        automaticallyImplyLeading: false,
         foregroundColor: primaryColor,
         centerTitle: true,
         actions: [

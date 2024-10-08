@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _navigateToLogin() async {
-    await Future.delayed(Duration(seconds: 2), () {});
+    await Future.delayed(Duration(seconds: 3), () {});
     Get.toNamed('/dashboard');
   }
 
@@ -24,20 +24,20 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: asikkcolor,
       body: Center(
-        child:  Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 90.0),
-              child: Container(
-                height: 300,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage('assets/icon/mmm.jpg'),
-                  ),
-                ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 90.0),
+          child: Container(
+            height: 300,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage('assets/icon/mmm.jpg'),
               ),
+            ),
+          ),
+        ),
       ),
-    ),
     );
   }
 }
