@@ -13,7 +13,7 @@ class Mybutton extends StatelessWidget {
     required this.onPressed,
     this.backgroundColor = depcolor,
     this.textColor = dahscolor,
-    required this.foregroundColor,
+    required this.foregroundColor, required double borderRadius, required double elevation,
   });
 
   @override

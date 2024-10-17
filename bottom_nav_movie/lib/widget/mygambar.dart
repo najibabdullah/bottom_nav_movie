@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class MovieGambar extends StatelessWidget {
   final String imageUrl;
+  final String title;
 
-  MovieGambar({required this.imageUrl,});
+  MovieGambar({required this.imageUrl, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,7 @@ class MovieGambar extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            width: 100,
+            width: 120,
             height: 150,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
@@ -22,7 +23,12 @@ class MovieGambar extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 8),        
+          SizedBox(height: 8),
+          Text(
+            title,
+            style: TextStyle(fontSize: 12, color: Colors.white),
+            overflow: TextOverflow.ellipsis,
+          ),
         ],
       ),
     );

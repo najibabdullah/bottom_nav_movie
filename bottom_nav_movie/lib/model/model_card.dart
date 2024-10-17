@@ -13,3 +13,18 @@ class ModelCard {
     this.onPressed,
   );
 }
+
+
+class MovieCategory {
+  final String text;
+  final IconData icon;
+  final Color color;
+  final VoidCallback onPressed;
+
+  MovieCategory({
+    required this.text,
+    required this.icon,
+    required this.color,
+    required this.onPressed,
+  });
+}

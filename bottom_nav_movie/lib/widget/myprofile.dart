@@ -11,13 +11,12 @@ Widget movieCard(
     elevation: 4,
     child: ListTile(
       leading: CircleAvatar(
-        backgroundImage: AssetImage(imageUrl),
+        backgroundImage: NetworkImage(imageUrl),
       ),
       title: Text(title),
       textColor: primaryColor,
       trailing: Icon(Icons.chevron_right),
-      onTap: () {
-      },
+      onTap: () {},
     ),
   );
 }

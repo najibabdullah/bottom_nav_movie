@@ -20,27 +20,16 @@ class ProfilePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(height: 20),
-  
           CircleAvatar(
             radius: 60,
             backgroundImage: AssetImage('assets/icon/akuucihuy.jpg'),
           ),
           SizedBox(height: 10),
-
           Text(
             'Najibunn',
             style: TextStyle(
                 fontSize: 24, fontWeight: FontWeight.bold, color: primaryColor),
           ),
-          SizedBox(height: 5),
-
-          Text(
-            'najibunn112@Gmail.com',
-            style: TextStyle(
-              color: primaryColor,
-            ),
-          ),
-
           SizedBox(height: 20),
           Divider(),
           Padding(
@@ -48,7 +37,7 @@ class ProfilePage extends StatelessWidget {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                'Favorite Movies',
+                'Description Profile',
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -56,12 +45,13 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
           ),
-
           Expanded(
             child: ListView(
               children: [
-                movieCard('Sonic', 'assets/icon/sonicCees.jpg'),
-                movieCard('sepiderman', 'assets/icon/sapiderman.jpeg'),
+                movieCard('082141079928',
+                    'https://media.istockphoto.com/id/1264265220/id/vektor/ikon-telepon-simbol-aplikasi-panggilan-tanda-antarmuka-datar-logo-telepon-lama-bentuk.jpg?s=2048x2048&w=is&k=20&c=yB5Z26lw7hJh1qJcWBObnHiYAxrB-6jrFK0gtvmpJwQ='),
+                movieCard('najib@gmail.com',
+                    'https://static.vecteezy.com/system/resources/previews/002/205/854/non_2x/email-icon-free-vector.jpg'),
               ],
             ),
           ),

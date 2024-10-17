@@ -26,9 +26,8 @@ class MoviePoster extends StatelessWidget {
           SizedBox(height: 8),
           Text(
             title,
-            style: TextStyle(fontSize: 12, color: Colors.white),
+            style: TextStyle(fontSize: 17, color: Colors.white),
             overflow: TextOverflow.ellipsis,
-            
           ),
         ],
       ),
